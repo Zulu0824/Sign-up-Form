@@ -12,8 +12,43 @@
         <div class="side-bar"></div>
         <div class="content-box">
             <div class="title-section"></div>
-            <div class="signup-section"></div>
-            <div class="button-section"></div>
+            <div class="signup-section">
+                <form action="" method="post" id="signup_form">
+                    <div class="user-name">
+                        <div class="group">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first_name" required placeholder="John">
+                        </div>
+                        <div class="group">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last_name" required placeholder="Doe">
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="group">
+                            <label for="email_id">EMAIL</label>
+                            <input type="email" name="email_id" id="email_id" required placeholder="john.doe@email.com">
+                        </div>
+                        <div class="group">
+                            <label for="phone_number">PHONE NUBMER</label>
+                            <input type="tel" name="phone_number" id="phone_number" required placeholder="xxxxxxxxxx">
+                        </div>
+                    </div>
+                    <div class="third-row">
+                        <div class="group">
+                            <label for="account_password">PASSWORD</label>
+                            <input type="password" name="account_password" id="account_password" required>
+                        </div>
+                        <div class="group">
+                            <label for="confirm_password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm_password" id="confirm_password">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="button-section">
+                <button type="submit" form="signup_form">Submit</button>
+            </div>
         </div>
     </div>
 </body>
