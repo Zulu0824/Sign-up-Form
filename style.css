@@ -9,10 +9,38 @@ html,body {
 }
 body {
     background-color: rgb(117, 117, 117);
-    border-radius: 1px solid blue;
+    /* border-radius: 1px solid blue; */
 }
 
 .container {
     border: 1px solid red;
     height: 100vh;
+    display: flex;
+}
+
+.side-bar {
+    background-color: lightblue;
+    flex: 3;
+}
+
+.content-box {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-section, .signup-section, .button-section {
+    flex: 1;
+}
+
+.title-section {
+    background-color: lightcoral;
+}
+
+.signup-section {
+    background-color: lightgoldenrodyellow;
+}
+
+.button-section {
+    background-color: aquamarine;
 }
