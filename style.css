@@ -54,10 +54,16 @@ img {
 
 .signup-section {
     background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.signup-section:hover{
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .button-section {
     background-color: rgb(249, 250, 251);
+    position: relative;
 }
 
 form {
@@ -86,7 +92,7 @@ input {
     width: 300px;
     text-align: center;
     border-radius: 5px;
-    border: 1px solid rgb(190, 190, 190);
+    border: 1px solid #E5E7EB;
     font-size: 18px;
 }
 
@@ -97,7 +103,7 @@ label {
 input:focus {
     border: 1px solid blue;
     outline: none;
-    box-shadow: 2px 4px 8px rgba(255, 0, 0, 0.3);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #account_password:user-invalid, #confirm_password:user-invalid {
@@ -119,4 +125,19 @@ input:focus {
 
 a:visited {
     color: white;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    padding: 18px 64px;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    left: clamp(50px, 10vw, 250px);
+    top: 50px;
+    /* border: 2px solid red; */
+    border: none;
+    border-radius: 8px;
+    box-shadow: none;
 }
