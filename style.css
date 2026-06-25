@@ -27,6 +27,7 @@ img {
 .side-bar {
     background-color: lightblue;
     flex: 3;
+    position: relative;
 }
 
 .content-box {
@@ -69,6 +70,7 @@ form {
 .group {
     display: flex;
     flex-direction: column;
+    gap: 4px;
 }
 
 input {
@@ -76,5 +78,37 @@ input {
     width: 300px;
     text-align: center;
     border-radius: 5px;
-    border: 1px solid black
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+label {
+    font-size: 15px;
+}
+
+input:focus {
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: 2px 4px 8px rgba(255, 0, 0, 0.3);
+}
+
+#account_password:user-invalid, #confirm_password:user-invalid {
+    border: 1px solid red;
+}
+
+#account_password:user-valid, #confirm_password:user-valid {
+    border: 1px solid green;
+}
+
+.image-credits {
+    position: absolute;
+    bottom: 40px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+a:visited {
+    color: white;
 }

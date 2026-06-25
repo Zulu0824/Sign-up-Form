@@ -11,6 +11,7 @@
     <div class="container">
         <div class="side-bar">
             <img src="halie-west-25xggax4bSA-unsplash.jpg" alt="side-bar-image">
+            <p class="image-credits">Photo by <a href="https://unsplash.com/@haliewestphoto" rel="noopener noreferrer" target="_blank">Haile West</a> on <a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
         </div>
         <div class="content-box">
             <div class="title-section"></div>
@@ -33,17 +34,17 @@
                         </div>
                         <div class="group">
                             <label for="phone_number">PHONE NUBMER</label>
-                            <input type="tel" name="phone_number" id="phone_number" required placeholder="xxxxxxxxxx">
+                            <input type="tel" name="phone_number" id="phone_number" required placeholder="xxxxxxxxxx" minlength="10">
                         </div>
                     </div>
                     <div class="third-row">
                         <div class="group">
                             <label for="account_password">PASSWORD</label>
-                            <input type="password" name="account_password" id="account_password" required>
+                            <input type="password" name="account_password" id="account_password" required minlength="8">
                         </div>
                         <div class="group">
                             <label for="confirm_password">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirm_password" id="confirm_password">
+                            <input type="password" name="confirm_password" id="confirm_password" required minlength="8">
                         </div>
                     </div>
                 </form>
