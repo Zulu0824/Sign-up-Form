@@ -9,6 +9,7 @@ html,body {
 }
 body {
     background-color: rgb(117, 117, 117);
+    font-family: "Roboto", sans-serif;
     /* border-radius: 1px solid blue; */
 }
 img {
@@ -48,4 +49,23 @@ img {
 
 .button-section {
     background-color: aquamarine;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    justify-content: center;
+    height: 100%;
+    gap: 25px;
+}
+
+.contact-info, .user-name, .third-row {
+    display: flex;
+    gap: 50px
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
 }
