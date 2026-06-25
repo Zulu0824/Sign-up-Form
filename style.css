@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
     font-family: "Norse";
+    font-family: "Norse-Bold";
     src: url(norse/Norse.otf);
+    src: url(norse/Norsebold.otf);
 }
 * {
     box-sizing: border-box;
@@ -162,13 +164,27 @@ p.login-text {
 }
 .odin-logo {
     position: absolute;
-    top: 100px;
+    top: 250px;
     width: 100%;
-    text-align: center;
+    height: 200px;
+    background-color: black;
+    color: white;
+    font-family: "Norse-Bold" , Norse;
+    font-size: 100px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 #logo {
     height: 150px;
-    width: 100px;
+    width: auto;
 }
 
+.odin-logo {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
