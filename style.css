@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: "Norse";
+    src: url(norse/Norse.otf);
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,7 +23,7 @@ img {
 }
 
 .container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100vh;
     display: flex;
 }
@@ -130,7 +134,7 @@ a:visited {
 button {
     background-color: #596D48;
     color: white;
-    padding: 18px 64px;
+    padding: 18px 54px;
     font-size: 18px;
     font-weight: bold;
     position: absolute;
@@ -141,3 +145,30 @@ button {
     border-radius: 8px;
     box-shadow: none;
 }
+#log_in:visited {
+    color: #596D48;
+}
+
+#log_in {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
+p.login-text {
+    position: absolute;
+    left:clamp(50px, 10vw, 250px);
+    top: 150px;
+    font-size: 18px;
+}
+.odin-logo {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+#logo {
+    height: 150px;
+    width: 100px;
+}
+
