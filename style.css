@@ -54,18 +54,27 @@ img {
 form {
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
+    margin-left: clamp(50px, 10vw, 250px);
     justify-content: center;
     height: 100%;
-    gap: 25px;
+    gap: 30px;
+    /* border: 1px solid red; */
 }
 
 .contact-info, .user-name, .third-row {
     display: flex;
-    gap: 50px
+    gap: 70px;
 }
 
 .group {
     display: flex;
     flex-direction: column;
+}
+
+input {
+    height: clamp(25px, 10vw, 30px);
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid black
 }
