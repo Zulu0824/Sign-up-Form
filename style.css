@@ -146,6 +146,10 @@ button {
     border: none;
     border-radius: 8px;
     box-shadow: none;
+    cursor: pointer;
+}
+button:hover {
+    cursor: pointer;
 }
 #log_in:visited {
     color: #596D48;
